@@ -1,0 +1,275 @@
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== Body ===== */
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./assests/Background.jpg") no-repeat center center/cover;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #0d6efd;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.navbar a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ffeb3b;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+  flex-wrap: wrap;
+  gap: 30px;
+  flex: 1;
+}
+
+.content {
+  max-width: 500px;
+}
+
+.content h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #0d6efd;
+}
+
+.content p {
+  color: #ccc;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+/* ===== Search Bar ===== */
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 2px solid #0d6efd;
+  border-radius: 30px;
+  overflow: hidden;
+  max-width: 400px;
+  background-color: white;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  padding: 12px 15px;
+  flex: 1;
+  font-size: 1em;
+  color: #333;
+}
+
+.search-bar button {
+  background-color: #0d6efd;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.search-bar button img {
+  width: 20px;
+  height: 20px;
+  filter: invert(1);
+}
+
+/* ===== Image Section ===== */
+.image-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.icon {
+  width: 120px;
+  height: 120px;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.4));
+  transition: transform 0.4s;
+}
+
+.icon:hover {
+  transform: scale(1.15);
+}
+
+/* ===== Submit Button ===== */
+.submit-btn {
+  display: block;
+  margin: 15px auto 0;
+  padding: 10px 25px;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  background: #0d6efd;
+  color: white;
+  margin-top: auto;
+}
+
+footer a {
+  color: #ffeb3b;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Chart Fix ===== */
+canvas {
+  display: block;
+  width: 100% !important;
+  max-width: 100%;
+  height: 400px !important;
+  margin: 0 auto;
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* ===== Responsive Design ===== */
+
+/* For Tablets (max-width: 992px) */
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 40px;
+  }
+
+  .image-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .search-bar {
+    margin: 0 auto;
+  }
+
+  canvas {
+    height: 320px !important;
+  }
+}
+
+/* For Mobiles (max-width: 600px) */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+  }
+
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .content h1 {
+    font-size: 1.7em;
+  }
+
+  .content p {
+    font-size: 0.95em;
+  }
+
+  .search-bar {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .image-section {
+    gap: 15px;
+  }
+
+  .icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 12px;
+  }
+
+  canvas {
+    height: 250px !important;
+  }
+}

@@ -1,0 +1,189 @@
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== Background ===== */
+body.bdy {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("images/charminar.png") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(13, 110, 253, 0.95);
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar .logo {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ffc107;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  flex: 1;
+  padding: 40px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.location-title {
+  font-size: 1.8rem;
+  color: #ffc107;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+/* ===== Chart Cards ===== */
+.sec {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  flex: 1 1 calc(50% - 20px);
+  min-height: 340px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  background: rgba(13, 110, 253, 0.95);
+  color: white;
+  margin-top: auto;
+}
+
+footer a {
+  color: #ffc107;
+}
+
+/* ===== Responsive Fixes ===== */
+
+/* Tablets (≤1024px) */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 30px;
+  }
+
+  .card {
+    min-height: 300px;
+  }
+
+  .location-title {
+    font-size: 1.6rem;
+  }
+}
+
+/* Mobile (≤768px) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .navbar nav {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .hero {
+    padding: 20px;
+  }
+
+  .sec {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 90%;
+    min-height: 320px;
+  }
+
+  .location-title {
+    font-size: 1.4rem;
+  }
+}
+
+/* Small Mobile (≤480px) */
+@media (max-width: 480px) {
+  .hero {
+    padding: 10px;
+  }
+
+  .card {
+    min-height: 300px;
+    padding: 15px;
+  }
+
+  canvas {
+    height: 280px !important;
+  }
+
+  .location-title {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}

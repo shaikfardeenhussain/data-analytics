@@ -1,0 +1,30 @@
+{
+  "chart1": {
+    "type": "bar",
+    "title": "Sales by Product Category - Delhi",
+    "label": "Sales (₹ in 1000s)",
+    "labels": ["Electronics", "Fashion", "Home", "Groceries"],
+    "values": [115, 90, 70, 60]
+  },
+  "chart2": {
+    "type": "line",
+    "title": "Profit by Year - Delhi",
+    "label": "Profit (₹ in Lakhs)",
+    "labels": ["2015","2016","2017","2018","2019","2020","2023","2024","2025"],
+    "values": [9, 11, 14, 18, 23, 27, 39, 45, 53]
+  },
+  "chart3": {
+    "type": "doughnut",
+    "title": "Number of Orders per Year - Delhi",
+    "label": "Orders",
+    "labels": ["2015","2016","2017","2018","2019","2020","2023","2024","2025"],
+    "values": [1250, 1450, 1700, 1950, 2250, 2550, 3700, 4100, 4700]
+  },
+  "chart4": {
+    "type": "pie",
+    "title": "Product Category Share - Delhi",
+    "label": "Categories",
+    "labels": ["Electronics","Fashion","Home","Groceries"],
+    "values": [43, 32, 15, 10]
+  }
+}

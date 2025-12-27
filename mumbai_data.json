@@ -1,0 +1,30 @@
+{
+  "chart1": {
+    "type": "bar",
+    "title": "Sales by Product Category - Mumbai",
+    "label": "Sales (₹ in 1000s)",
+    "labels": ["Electronics", "Fashion", "Home", "Groceries"],
+    "values": [110, 95, 75, 55]
+  },
+  "chart2": {
+    "type": "line",
+    "title": "Profit by Year - Mumbai",
+    "label": "Profit (₹ in Lakhs)",
+    "labels": ["2015","2016","2017","2018","2019","2020","2023","2024","2025"],
+    "values": [8, 10, 13, 17, 22, 28, 40, 46, 55]
+  },
+  "chart3": {
+    "type": "pie",
+    "title": "Number of Orders per Year - Mumbai",
+    "label": "Orders",
+    "labels": ["2015","2016","2017","2018","2019","2020","2023","2024","2025"],
+    "values": [1200, 1450, 1700, 2000, 2300, 2600, 3700, 4200, 4800]
+  },
+  "chart4": {
+    "type": "doughnut",
+    "title": "Product Category Share - Mumbai",
+    "label": "Categories",
+    "labels": ["Electronics","Fashion","Home","Groceries"],
+    "values": [45, 30, 15, 10]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "chart1": {
+    "type": "bar",
+    "title": "Sales by Product Category - Bangalore",
+    "label": "Sales (₹ in 1000s)",
+    "labels": ["Electronics", "Fashion", "Home", "Groceries"],
+    "values": [100, 85, 65, 50]
+  },
+  "chart2": {
+    "type": "line",
+    "title": "Profit by Year - Bangalore",
+    "label": "Profit (₹ in Lakhs)",
+    "labels": ["2015","2016","2017","2018","2019","2020","2023","2024","2025"],
+    "values": [7, 9, 12, 16, 20, 25, 35, 41, 49]
+  },
+  "chart3": {
+    "type": "doughnut",
+    "title": "Number of Orders per Year - Bangalore",
+    "label": "Orders",
+    "labels": ["2015","2016","2017","2018","2019","2020","2023","2024","2025"],
+    "values": [1050, 1250, 1500, 1750, 2050, 2350, 3400, 3750, 4200]
+  },
+  "chart4": {
+    "type": "pie",
+    "title": "Product Category Share - Bangalore",
+    "label": "Categories",
+    "labels": ["Electronics","Fashion","Home","Groceries"],
+    "values": [42, 33, 15, 10]
+  }
+}

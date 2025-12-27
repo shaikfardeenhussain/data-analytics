@@ -1,0 +1,30 @@
+{
+  "chart1": {
+    "type": "bar",
+    "title": "Sales by Product Category - Hyderabad",
+    "label": "Sales (₹ in 1000s)",
+    "labels": ["Electronics", "Fashion", "Home", "Groceries"],
+    "values": [95, 80, 60, 45]
+  },
+  "chart2": {
+    "type": "line",
+    "title": "Profit by Year - Hyderabad",
+    "label": "Profit (₹ in Lakhs)",
+    "labels": ["2015","2016","2017","2018","2019","2020","2023","2024","2025"],
+    "values": [6, 8, 11, 15, 19, 23, 36, 42, 48]
+  },
+  "chart3": {
+    "type": "pie",
+    "title": "Number of Orders per Year - Hyderabad",
+    "label": "Orders",
+    "labels": ["2015","2016","2017","2018","2019","2020","2023","2024","2025"],
+    "values": [900, 1100, 1350, 1600, 1850, 2100, 3150, 3500, 3900]
+  },
+  "chart4": {
+    "type": "doughnut",
+    "title": "Product Category Share - Hyderabad",
+    "label": "Categories",
+    "labels": ["Electronics","Fashion","Home","Groceries"],
+    "values": [45, 30, 15, 10]
+  }
+}

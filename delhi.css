@@ -1,0 +1,167 @@
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== Body ===== */
+body.bdy {
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url("./images/taj.jpg") no-repeat center center / cover;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: rgba(13, 110, 253, 0.95);
+  color: white;
+  flex-wrap: wrap;
+}
+
+.navbar .logo {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.navbar a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ffeb3b;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  flex: 1;
+  padding: 50px 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.location-title {
+  font-size: 1.8rem;
+  color: #ffeb3b;
+  font-weight: 600;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+/* ===== Chart Section ===== */
+.sec {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  padding: 20px;
+  flex: 1;
+  min-height: 330px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  background: rgba(13, 110, 253, 0.95);
+  color: white;
+  margin-top: auto;
+}
+
+footer a {
+  color: #ffeb3b;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Responsive Design ===== */
+/* Tablets (≤992px) */
+@media (max-width: 992px) {
+  .hero {
+    padding: 40px 30px;
+  }
+  .sec {
+    gap: 15px;
+  }
+  .card {
+    min-height: 280px;
+  }
+}
+
+/* Mobiles (≤600px) */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  .navbar a {
+    margin: 8px 0;
+  }
+  .hero {
+    padding: 20px;
+  }
+  .sec {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 100%;
+    max-width: 500px;
+    min-height: 250px;
+  }
+  canvas {
+    height: 250px !important;
+  }
+  footer {
+    font-size: 0.8rem;
+    padding: 12px;
+  }
+}
+
+/* Extra-Small Devices (≤400px) */
+@media (max-width: 400px) {
+  .card {
+    min-height: 220px;
+  }
+  .location-title {
+    font-size: 1.4rem;
+  }
+}
